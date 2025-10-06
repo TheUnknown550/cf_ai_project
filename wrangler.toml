@@ -1,0 +1,21 @@
+name = "cf-ai-chat-worker"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# Durable Objects
+[durable_objects]
+bindings = [
+  { name = "CHAT_SESSION", class_name = "ChatSession" }
+]
+
+# Workers AI
+[ai]
+binding = "AI"
+
+# Environment variables (if needed)
+# [vars]
+# MY_VAR = "value"
+
+# Pages (if deploying as Pages function)
+# [[pages_build_output]]
+# dir = "pages"
