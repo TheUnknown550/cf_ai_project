@@ -11,7 +11,7 @@ const chatMessages = document.getElementById('chatMessages');
 const loading = document.getElementById('loading');
 
 // Worker endpoint (update this to your deployed Worker URL)
-const WORKER_URL = 'https://your-worker-url.workers.dev/chat'; // Replace with actual URL
+const WORKER_URL = 'http://localhost:8787/chat'; // Local development URL
 
 // Event listeners
 sendButton.addEventListener('click', sendMessage);
